@@ -33,3 +33,5 @@ export class ComprovarC2Component {
     }
   }
 }
+
+//Iniciar al terminal amb la comanda: ng server --port 4300
