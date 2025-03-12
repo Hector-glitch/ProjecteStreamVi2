@@ -27,6 +27,7 @@ export class ComprovarC2Component {
       : 'Código incorrecto. Inténtalo de nuevo.';
 
     if (isValid) {
+      localStorage.setItem('sessionActive', 'true'); // Desa que la sessió està activa
       setTimeout(() => {
         window.location.href = 'http://localhost:4200';
       }, 2000);
@@ -34,4 +35,4 @@ export class ComprovarC2Component {
   }
 }
 
-//Iniciar al terminal amb la comanda: ng server --port 4300
+//Iniciar al terminal amb la comanda: ng serve --port 4300
